@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculator</title>
+        <style>
+            body{
+                
+                margin:0;
+                padding:0;
+                background-image: url('C:/Users/Susheela Kamatagi/Downloads/sonuuuuuuu.jfif');
+                background-repeat: no-repeat;
+                background-size: cover;
+                }
+            .menu{
+                width:30%;
+                
+                margin:40px;
+                
+                padding:20px;
+              
+                border-radius: 20px;
+                text-align: center;
+                background-color:burlywood;
+                }
+            .bar{
+                padding-right: 40px;
+            }
+            .sonu{
+                padding-right: 80px;
+            }
+            .sush{
+                padding-right: 20px;
+            }
+            .ww{
+                color: brown;
+                margin-top:5px;
+                text-align: center;
+            }
+        </style>
+        
+        </head>
+        <body>
+
+            <div class="menu">
+                <h1 class="ww">Calculator</h1>
+            <label class="bar">Enter a first number</label><br>
+            <input type="text" id="n1"><br><br>
+            <label class="sush">Enter a second number</label><br>
+            <input type="text" id="n2"><br>
+            <br>
+            <button onclick="add();">add</button>
+            <button onclick="sub();">sub</button>
+            <button onclick="multi();">multi</button>
+            <button onclick="div();">div</button><br><br>
+            <label class="sonu">The Result is:</label><br>
+            <input type="text" id="total">
+            
+            </div>
+            
+            
+            
+            <script>
+                function add()
+               {
+                  var a=parseInt(document.getElementById("n1").value);
+                  var  b=parseInt(document.getElementById("n2").value);
+                      c=a+b;
+                  document.getElementById("total").value=c;
+               }
+               function sub()
+               {
+                  var a=parseInt(document.getElementById("n1").value);
+                 var  b=parseInt(document.getElementById("n2").value);
+                  c=a-b;
+                   document.getElementById("total").value=c;
+               }
+               function multi()
+               {
+                  var a=parseInt(document.getElementById("n1").value);
+                 var  b=parseInt(document.getElementById("n2").value);
+                      c=a*b;
+                   document.getElementById("total").value=c;
+               }
+               function div()
+               {
+                  var a=parseInt(document.getElementById("n1").value);
+                 var  b=parseInt(document.getElementById("n2").value);
+                      c=a/b;
+                   document.getElementById("total").value=c;
+               }
+           </script>
+        
+
+        </body>
+
+    
+</html>
+    
